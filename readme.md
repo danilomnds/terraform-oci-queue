@@ -73,6 +73,7 @@ output "queue_id" {
 | visibility_in_seconds | the default visibility timeout of the messages consumed from the queue, in seconds | `number` | n/a | No |
 | purge_trigger | an optional property when incremented triggers purge | `string` | n/a | No |
 | purge_type | an optional value that specifies the purge behavior for the queue. could be set to normal, dlq or both | `string` | n/a | No |
+| groups | list of azure AD groups that will manage objects inside the bucket | `list(string)` | `[]` | No |
 
 ## Output variables
 
